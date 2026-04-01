@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>五子棋遊戲</title>
+    <meta name="description" content="純前端建立的五子棋雙人對戰遊戲">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>五子棋</h1>
+            <p class="subtitle">雙人對戰，先連成五子者獲勝！</p>
+        </header>
+
+        <div class="game-info">
+            <div id="status" class="status">目前輪到：<span class="player black-text">黑子</span></div>
+            <button id="restart-btn" class="btn">重新開始</button>
+        </div>
+
+        <div class="board-wrapper">
+            <div class="board-container" id="board-container">
+                <div class="board-grid" id="board-grid"></div>
+                <div class="board" id="board"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
