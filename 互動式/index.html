@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>校園戀愛物語：意外的轉學生</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 用於繪製櫻花飄落效果的畫布 -->
+    <canvas id="sakuraCanvas"></canvas>
+    
+    <div id="game-container" class="container">
+        
+        <!-- 首頁 -->
+        <div id="start-screen" class="screen active">
+            <h1>校園戀愛物語</h1>
+            <div class="card transparent-card">
+                <p>這是一個關於校園、相遇與抉擇的青春戀愛故事。<br><br>你的每一個選擇，都將引領向截然不同的未來。準備好展開你的青春篇章了嗎？</p>
+            </div>
+            <button id="start-btn" class="btn primary">開始故事</button>
+        </div>
+
+        <!-- 故事畫面 -->
+        <div id="story-screen" class="screen">
+            <div id="story-text" class="card">
+                <!-- 故事內容會透過 JS 動態寫入 -->
+            </div>
+            <div id="options-container" class="options">
+                <!-- 選項按鈕會透過 JS 動態寫入 -->
+            </div>
+        </div>
+
+        <!-- 結局畫面 -->
+        <div id="ending-screen" class="screen">
+            <h2 id="ending-title"></h2>
+            <div id="ending-desc" class="card"></div>
+            <button id="restart-btn" class="btn primary">重新開始故事</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
