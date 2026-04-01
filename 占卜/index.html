@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>神秘運勢占卜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ 神秘運勢占卜 ✨</h1>
+            <p>集中精神，點擊下方的水晶球，揭曉你今日的專屬運勢！</p>
+        </header>
+
+        <main>
+            <div id="divination-area" class="active">
+                <button id="draw-btn" class="mystic-btn">
+                    <span class="btn-text">開始占卜</span>
+                    <span class="btn-icon">🔮</span>
+                </button>
+            </div>
+
+            <div id="result-area" class="hidden">
+                <div class="result-card">
+                    <h2 id="result-title">運勢標題</h2>
+                    <div class="result-details">
+                        <p><strong>💼 工作：</strong><span id="result-work"></span></p>
+                        <p><strong>📚 學業：</strong><span id="result-study"></span></p>
+                        <p><strong>❤️ 愛情：</strong><span id="result-love"></span></p>
+                        <p><strong>💰 金錢：</strong><span id="result-money"></span></p>
+                    </div>
+                    <p id="result-desc" class="result-desc">整體說明</p>
+                    <p id="result-closing" class="result-closing">結語</p>
+                </div>
+                <button id="retry-btn" class="retry-btn">🔄 再占卜一次</button>
+            </div>
+        </main>
+        
+        <!-- Canvas for simple background stars -->
+        <canvas id="bg-canvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
